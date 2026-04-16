@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talent Pool - Job Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen bg-[#e1e1e1] text-[#111318]">
+    <div class="min-h-screen flex">
+      <aside class="hidden md:flex w-72 flex-col bg-white border-r border-[#e8eaef]">
+        <div class="flex items-center gap-3 px-5 py-7 border-b border-[#e8eaef]">
+          <img src="assets/logo-mark.svg" alt="Talent Pool" class="w-10 h-10 rounded-2xl bg-[#1e207a] p-2" />
+          <div>
+            <p class="font-serif text-lg tracking-[-0.3px]">Talent Pool testing</p>
+          </div>
+        </div>
+        <div class="flex-1 overflow-y-auto px-3 py-4">
+          <div class="mb-4 text-xs uppercase tracking-[0.8px] text-[#9da3b4] font-semibold">Explore</div>
+          <nav class="space-y-2">
+            <a class="flex items-center gap-3 rounded-xl bg-[#ebf1ff] px-3 py-3 font-medium text-[#1e207a]" href="#">
+              <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#f7f8fa] text-lg">≡</span>
+              Open Positions
+            </a>
+            <a class="flex items-center gap-3 rounded-xl px-3 py-3 text-[#5c6070]" href="#">
+              <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#f7f8fa] text-lg opacity-70">★</span>
+              My Applications
+              <span class="ml-auto inline-flex h-6 min-w-[24px] items-center justify-center rounded-full bg-[#1e207a] px-2 text-[11px] font-semibold text-white">3</span>
+            </a>
+          </nav>
+          <div class="mt-8 mb-3 text-xs uppercase tracking-[0.8px] text-[#9da3b4] font-semibold">Admin</div>
+          <nav class="space-y-2">
+            <a class="flex items-center gap-3 rounded-xl px-3 py-3 text-[#5c6070]" href="#">
+              <span class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#f7f8fa] text-lg opacity-70">⌘</span>
+              Dashboard
+            </a>
+          </nav>
+        </div>
+        <div class="border-t border-[#e8eaef] px-5 py-4">
+          <div class="flex items-center gap-3 rounded-2xl bg-[#f7f8fa] p-3">
+            <div class="flex h-12 w-12 items-center justify-center rounded-[16px] bg-[#ebf1ff] text-sm font-semibold text-[#1e207a]">JD</div>
+            <div>
+              <p class="font-medium">John Doe</p>
+              <p class="text-xs text-[#9da3b4]">Product Designer</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="flex-1 min-h-screen overflow-hidden">
+        <header class="sticky top-0 z-10 bg-white border-b border-[#e8eaef]">
+          <div class="mx-auto flex max-w-[1458px] items-center justify-between px-6 py-4">
+            <div class="relative w-full max-w-[340px]">
+              <img src="assets/search.svg" alt="Search" class="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-[#5c6070]" />
+              <input type="search" placeholder="Search roles, departments…" class="w-full rounded-2xl border border-[#e8eaef] bg-[#f7f8fa] py-2.5 pl-12 pr-4 text-sm text-[#5c6070] outline-none focus:border-[#1e207a] focus:ring-2 focus:ring-[#d1d5e0]/50" />
+            </div>
+            <div class="flex items-center gap-3">
+              <button class="relative inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#f7f8fa] border border-[#e8eaef] text-[#1e207a]">
+                <span class="absolute top-2 right-2 h-2 w-2 rounded-full bg-[#1a56db]"></span>
+                <img src="assets/grid.svg" alt="Notifications" class="h-5 w-5" />
+              </button>
+              <div class="inline-flex items-center gap-3 rounded-2xl bg-[#ebf1ff] px-4 py-2 text-sm font-semibold text-[#1a56db]">
+                JD
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="mx-auto max-w-[1458px] px-6 py-6">
+          <a href="#" class="inline-flex items-center rounded-2xl border border-[#d1d5e0] px-4 py-2 text-sm font-medium text-[#5c6070]">← Back to listings</a>
+
+          <div class="mt-6 grid gap-6 lg:grid-cols-[1.9fr_1fr]">
+            <div class="space-y-6">
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-7 shadow-sm">
+                <div class="flex flex-wrap items-center gap-4">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#ebf1ff] text-xl">💻</div>
+                  <div>
+                    <p class="text-[11px] uppercase tracking-[0.66px] text-[#9da3b4] font-semibold">Engineering</p>
+                  </div>
+                </div>
+                <h1 class="mt-6 text-3xl font-serif tracking-[-0.3px] text-[#111318]">Senior Frontend Engineer</h1>
+                <div class="mt-5 flex flex-wrap gap-3">
+                  <span class="inline-flex items-center rounded-full bg-[#ebf1ff] px-3 py-1.5 text-[11.5px] font-medium text-[#1e207a]">Remote</span>
+                  <span class="inline-flex items-center rounded-full bg-[#e6f6f1] px-3 py-1.5 text-[11.5px] font-medium text-[#0e7c59]">Full-time</span>
+                  <span class="inline-flex items-center rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-1.5 text-[11.5px] font-medium text-[#5c6070]">Posted 2 days ago</span>
+                </div>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a class="inline-flex items-center justify-center rounded-xl bg-[#1e207a] px-5 py-3 text-sm font-medium text-white" href="#">Apply Now</a>
+                  <a class="inline-flex items-center justify-center rounded-xl border border-[#d1d5e0] bg-white px-5 py-3 text-sm font-medium text-[#5c6070]" href="#">Refer a friend</a>
+                </div>
+              </section>
+
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">About the Role</p>
+                <p class="mt-4 text-sm leading-7 text-[#5c6070]">We’re looking for a Senior Frontend Engineer to join our Platform team. You’ll lead the development of our design system, improve performance across our web products, and collaborate closely with designers and backend engineers to ship high-quality experiences at scale. This role has a strong impact on both the internal tools and customer-facing surfaces we build.</p>
+              </section>
+
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">Requirements</p>
+                <ul class="mt-4 space-y-3 text-sm text-[#5c6070]">
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>5+ years of frontend development experience with React or a comparable framework</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Strong understanding of accessibility standards (WCAG 2.1) and inclusive design</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Experience building and maintaining component libraries or design systems</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Fluency with TypeScript and modern build tooling (Vite, Webpack, etc.)</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Excellent written communication and cross-functional collaboration skills</li>
+                </ul>
+              </section>
+
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">Nice to Have</p>
+                <ul class="mt-4 space-y-3 text-sm text-[#5c6070]">
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Experience with Figma tokens or design-to-code workflows</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Prior experience at a fintech or B2B SaaS company</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Familiarity with performance profiling and web vitals optimization</li>
+                </ul>
+              </section>
+
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">What We Offer</p>
+                <ul class="mt-4 space-y-3 text-sm text-[#5c6070]">
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Competitive salary with transparent band: $130,000 – $160,000</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Equity package + annual performance bonus</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>$2,000 annual learning & development budget</li>
+                  <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span>Fully remote with optional access to coworking spaces</li>
+                </ul>
+              </section>
+            </div>
+
+            <aside class="space-y-6">
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">Role Details</p>
+                <div class="mt-5 space-y-4 text-sm text-[#5c6070]">
+                  <div class="flex items-center gap-3"><span class="h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span><span><strong class="text-[#111318]">Location:</strong> Remote (Global)</span></div>
+                  <div class="flex items-center gap-3"><span class="h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span><span><strong class="text-[#111318]">Type:</strong> Full-time</span></div>
+                  <div class="flex items-center gap-3"><span class="h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span><span><strong class="text-[#111318]">Team size:</strong> 8 people</span></div>
+                  <div class="flex items-center gap-3"><span class="h-2.5 w-2.5 rounded-full bg-[#1e207a]"></span><span><strong class="text-[#111318]">Start date:</strong> ASAP</span></div>
+                </div>
+              </section>
+
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">Skills Required</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">React</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">TypeScript</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">CSS</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">Figma</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">A11y</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">Node.js</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">Vite</span>
+                  <span class="rounded-full border border-[#e8eaef] bg-[#f7f8fa] px-3 py-2 text-xs font-semibold text-[#5c6070]">Testing</span>
+                </div>
+              </section>
+
+              <section class="rounded-[12px] border border-[#e8eaef] bg-white p-6">
+                <p class="uppercase tracking-[0.57px] text-[11.5px] font-semibold text-[#111318]">Similar Roles</p>
+                <div class="mt-4 space-y-4 text-sm">
+                  <div class="rounded-2xl bg-[#f7f8fa] p-4">
+                    <p class="font-semibold text-[#111318]">Backend Engineer — APIs</p>
+                    <p class="mt-2 text-xs text-[#5c6070]">Engineering · Hybrid</p>
+                  </div>
+                  <div class="rounded-2xl bg-[#f7f8fa] p-4">
+                    <p class="font-semibold text-[#111318]">Security Engineer</p>
+                    <p class="mt-2 text-xs text-[#5c6070]">Engineering · On-site</p>
+                  </div>
+                </div>
+              </section>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

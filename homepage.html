@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talent Pool - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen bg-[#e1e1e1] text-[#111318]">
+    <div class="mx-auto max-w-[1440px] px-6 py-8">
+      <header class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo-mark.svg" alt="Talent Pool" class="h-12 w-12 rounded-2xl bg-[#1e207a] p-2" />
+          <div>
+            <p class="font-serif text-2xl tracking-[-0.3px] text-[#111318]">Talent Pool</p>
+            <p class="text-sm text-[#5c6070]">Job Portal for modern teams</p>
+          </div>
+        </div>
+        <nav class="flex flex-wrap items-center gap-4 text-sm text-[#5c6070]">
+          <a class="hover:text-[#1e207a]" href="#jobs">Jobs</a>
+          <a class="hover:text-[#1e207a]" href="#companies">Companies</a>
+          <a class="hover:text-[#1e207a]" href="#about">About</a>
+          <a class="rounded-full border border-[#d1d5e0] bg-white px-4 py-2 font-semibold text-[#111318] hover:bg-[#f7f8fa]" href="#login">Sign In</a>
+        </nav>
+      </header>
+
+      <main class="mt-12 grid gap-10 lg:grid-cols-[1.3fr_0.7fr]">
+        <section class="space-y-8">
+          <div class="max-w-2xl space-y-6 rounded-[28px] bg-white p-10 shadow-sm">
+            <span class="inline-flex rounded-full bg-[#e6f6f1] px-3 py-1 text-xs font-semibold uppercase tracking-[0.6px] text-[#0e7c59]">New jobs, tailored for you</span>
+            <h1 class="text-5xl font-serif tracking-[-0.6px] text-[#111318]">Discover remote roles at fast-growing teams.</h1>
+            <p class="max-w-xl text-lg leading-8 text-[#5c6070]">Browse curated opportunities, save your favorites, and apply with confidence on a job portal built for modern product teams.</p>
+            <div class="grid gap-4 sm:grid-cols-[1fr_auto]">
+              <div class="relative">
+                <input type="text" placeholder="Search roles, departments…" class="w-full rounded-2xl border border-[#e8eaef] bg-[#f7f8fa] py-4 pl-14 pr-4 text-sm text-[#5c6070] outline-none focus:border-[#1e207a] focus:ring-2 focus:ring-[#d1d5e0]/50" />
+                <span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#5c6070]">🔍</span>
+              </div>
+              <button class="inline-flex items-center justify-center rounded-2xl bg-[#1e207a] px-6 py-4 text-sm font-semibold text-white shadow-sm hover:bg-[#151758]">Get Started</button>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div class="rounded-[24px] bg-[#ffffff] p-6 shadow-sm">
+              <p class="text-sm uppercase tracking-[0.6px] text-[#9da3b4]">Open roles</p>
+              <p class="mt-4 text-3xl font-semibold text-[#111318]">1,248</p>
+              <p class="mt-3 text-sm text-[#5c6070]">Fresh positions added daily across product, design, and engineering.</p>
+            </div>
+            <div class="rounded-[24px] bg-[#f3e8ff] p-6 shadow-sm">
+              <p class="text-sm uppercase tracking-[0.6px] text-[#9da3b4]">Companies</p>
+              <p class="mt-4 text-3xl font-semibold text-[#111318]">98+</p>
+              <p class="mt-3 text-sm text-[#5c6070]">Fast-growing startups and scaling teams ready to hire talent.</p>
+            </div>
+            <div class="rounded-[24px] bg-[#e6f6f1] p-6 shadow-sm">
+              <p class="text-sm uppercase tracking-[0.6px] text-[#9da3b4]">Remote friendly</p>
+              <p class="mt-4 text-3xl font-semibold text-[#111318]">82%</p>
+              <p class="mt-3 text-sm text-[#5c6070]">Roles designed for flexible work, global collaboration, and inclusive hiring.</p>
+            </div>
+          </div>
+
+          <div id="jobs" class="space-y-4">
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <p class="text-xs uppercase tracking-[0.8px] text-[#9da3b4]">Featured</p>
+                <h2 class="text-2xl font-semibold text-[#111318]">Top picks for you</h2>
+              </div>
+              <a class="text-sm font-semibold text-[#1e207a] hover:text-[#151758]" href="#">See all jobs →</a>
+            </div>
+            <div class="grid gap-4 xl:grid-cols-2">
+              <article class="rounded-[24px] border border-[#e8eaef] bg-white p-6 shadow-sm">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ebf1ff] text-xl">💻</div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.6px] text-[#9da3b4]">Engineering</p>
+                    <h3 class="mt-2 text-xl font-semibold text-[#111318]">Senior Frontend Engineer</h3>
+                  </div>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3">
+                  <span class="rounded-full bg-[#ebf1ff] px-3 py-2 text-[11.5px] font-medium text-[#1e207a]">Remote</span>
+                  <span class="rounded-full bg-[#e6f6f1] px-3 py-2 text-[11.5px] font-medium text-[#0e7c59]">Full-time</span>
+                </div>
+                <p class="mt-5 text-sm leading-7 text-[#5c6070]">Join our team to build elegant, high-performance interfaces that delight millions of users across web and mobile experiences.</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <span class="rounded-full border border-[#d1d5e0] bg-[#f7f8fa] px-3 py-2 text-xs text-[#5c6070]">React</span>
+                  <span class="rounded-full border border-[#d1d5e0] bg-[#f7f8fa] px-3 py-2 text-xs text-[#5c6070]">TypeScript</span>
+                  <span class="rounded-full border border-[#d1d5e0] bg-[#f7f8fa] px-3 py-2 text-xs text-[#5c6070]">Design System</span>
+                </div>
+                <div class="mt-6 flex flex-wrap items-center gap-3">
+                  <a class="rounded-xl bg-[#1e207a] px-5 py-3 text-sm font-semibold text-white" href="#">Apply now</a>
+                  <span class="text-sm text-[#9da3b4]">160 applicants</span>
+                </div>
+              </article>
+
+              <article class="rounded-[24px] border border-[#e8eaef] bg-white p-6 shadow-sm">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fff3e2] text-xl">📈</div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.6px] text-[#9da3b4]">Product</p>
+                    <h3 class="mt-2 text-xl font-semibold text-[#111318]">Product Design Lead</h3>
+                  </div>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3">
+                  <span class="rounded-full bg-[#f3e8ff] px-3 py-2 text-[11.5px] font-medium text-[#1e207a]">Hybrid</span>
+                  <span class="rounded-full bg-[#e6f6f1] px-3 py-2 text-[11.5px] font-medium text-[#0e7c59]">Senior</span>
+                </div>
+                <p class="mt-5 text-sm leading-7 text-[#5c6070]">Lead product design strategy for an ambitious platform team, shipping delightful experiences with cross-functional partners.</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <span class="rounded-full border border-[#d1d5e0] bg-[#f7f8fa] px-3 py-2 text-xs text-[#5c6070]">Figma</span>
+                  <span class="rounded-full border border-[#d1d5e0] bg-[#f7f8fa] px-3 py-2 text-xs text-[#5c6070]">UX</span>
+                  <span class="rounded-full border border-[#d1d5e0] bg-[#f7f8fa] px-3 py-2 text-xs text-[#5c6070]">Remote</span>
+                </div>
+                <div class="mt-6 flex flex-wrap items-center gap-3">
+                  <a class="rounded-xl bg-[#1e207a] px-5 py-3 text-sm font-semibold text-white" href="#">View role</a>
+                  <span class="text-sm text-[#9da3b4]">120 applicants</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <aside class="space-y-6">
+          <div class="rounded-[28px] bg-white p-8 shadow-sm">
+            <p class="text-sm uppercase tracking-[0.6px] text-[#9da3b4]">Work from anywhere</p>
+            <h2 class="mt-4 text-2xl font-semibold text-[#111318]">Trusted by remote-first teams</h2>
+            <p class="mt-4 text-sm leading-7 text-[#5c6070]">Our platform connects candidates with hiring teams that value remote work, flexible schedules, and great communication.</p>
+            <div class="mt-6 grid gap-4 text-sm text-[#5c6070] sm:grid-cols-2">
+              <div class="rounded-3xl bg-[#fafafb] p-4">
+                <p class="font-semibold text-[#111318]">3.7%</p>
+                <p class="mt-1">Percent of roles filled within 2 weeks</p>
+              </div>
+              <div class="rounded-3xl bg-[#fafafb] p-4">
+                <p class="font-semibold text-[#111318]">4.9/5</p>
+                <p class="mt-1">Average candidate satisfaction rating</p>
+              </div>
+              <div class="rounded-3xl bg-[#fafafb] p-4">
+                <p class="font-semibold text-[#111318]">250+</p>
+                <p class="mt-1">Hiring teams and startups</p>
+              </div>
+              <div class="rounded-3xl bg-[#fafafb] p-4">
+                <p class="font-semibold text-[#111318]">1,200+</p>
+                <p class="mt-1">Open roles curated daily</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[28px] bg-[#1e207a] p-8 text-white shadow-sm">
+            <p class="text-sm uppercase tracking-[0.6px] text-[#aab3fa]">Ready to hire?</p>
+            <h2 class="mt-4 text-2xl font-semibold">Post your role in minutes</h2>
+            <p class="mt-4 text-sm leading-7 text-[#d8dbff]">Reach qualified candidates who are actively looking for product and engineering roles.</p>
+            <a class="mt-6 inline-flex rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-[#1e207a]" href="#">Post a job</a>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
